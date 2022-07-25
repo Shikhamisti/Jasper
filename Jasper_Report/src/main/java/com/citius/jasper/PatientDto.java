@@ -10,8 +10,26 @@ public class PatientDto {
 	private int patientWeight;
 	private int apDate;
 	private String patientAddress;
-	public int getAppointmentId() {
-		return appointmentId;
+	
+	
+	public PatientDto(){}
+	
+	
+	public PatientDto(int appointmentId, String patientName, String diagnosis, String gender, int patientAge,
+			int patientWeight, int apDate, String patientAddress) {
+		super();
+		this.appointmentId = appointmentId;
+		this.patientName = patientName;
+		this.diagnosis = diagnosis;
+		this.gender = gender;
+		this.patientAge = patientAge;
+		this.patientWeight = patientWeight;
+		this.apDate = apDate;
+		this.patientAddress = patientAddress;
+	}
+	public int getappointmentId() {
+	return appointmentId;	
+		
 	}
 	public void setAppointmentId(int appointmentId) {
 		this.appointmentId = appointmentId;
@@ -57,6 +75,8 @@ public class PatientDto {
 	}
 	public void setPatientAddress(String patientAddress) {
 		this.patientAddress = patientAddress;
+	
+		
 	}
 
 	
